@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,8 @@
 		B8924141236C2FAD0004A3D2 /* buttonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8924140236C2FAD0004A3D2 /* buttonExtension.swift */; };
 		B8924143236C354B0004A3D2 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8924142236C354B0004A3D2 /* Global.swift */; };
 		B8924146236C3E6B0004A3D2 /* Avenir-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8924145236C3E6B0004A3D2 /* Avenir-Heavy.ttf */; };
+		E74410172387FF9700434924 /* tabbarTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74410162387FF9700434924 /* tabbarTransition.swift */; };
+		E74410192387FFFD00434924 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74410182387FFFD00434924 /* MyTabBarController.swift */; };
 		F7C2A62CE1C10E5C5E21F762 /* Pods_Expensecure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385F937D8F3D8C0324AEA836 /* Pods_Expensecure.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		B8924140236C2FAD0004A3D2 /* buttonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonExtension.swift; sourceTree = "<group>"; };
 		B8924142236C354B0004A3D2 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		B8924145236C3E6B0004A3D2 /* Avenir-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Heavy.ttf"; sourceTree = "<group>"; };
+		E74410162387FF9700434924 /* tabbarTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabbarTransition.swift; sourceTree = "<group>"; };
+		E74410182387FFFD00434924 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				B878999023698273008A1943 /* Assets.xcassets */,
 				B878999223698273008A1943 /* LaunchScreen.storyboard */,
 				B878999523698273008A1943 /* Info.plist */,
+				E74410162387FF9700434924 /* tabbarTransition.swift */,
+				E74410182387FFFD00434924 /* MyTabBarController.swift */,
 			);
 			path = Expensecure;
 			sourceTree = "<group>";
@@ -182,7 +188,6 @@
 				B878998023698271008A1943 /* Sources */,
 				B878998123698271008A1943 /* Frameworks */,
 				B878998223698271008A1943 /* Resources */,
-				D3F8D1DE02C088A9C14BDBAA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,23 +246,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D3F8D1DE02C088A9C14BDBAA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Expensecure/Pods-Expensecure-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Expensecure/Pods-Expensecure-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Expensecure/Pods-Expensecure-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F39934C95BA81CE7D90CBD14 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,9 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8924141236C2FAD0004A3D2 /* buttonExtension.swift in Sources */,
+				E74410172387FF9700434924 /* tabbarTransition.swift in Sources */,
 				B878998C23698271008A1943 /* ViewController.swift in Sources */,
 				B878998823698271008A1943 /* AppDelegate.swift in Sources */,
 				B87899A923698876008A1943 /* AddExpenseIncomeViewController.swift in Sources */,
+				E74410192387FFFD00434924 /* MyTabBarController.swift in Sources */,
 				B878998A23698271008A1943 /* SceneDelegate.swift in Sources */,
 				B87899A6236986BE008A1943 /* MenuViewController.swift in Sources */,
 				B87899A323698460008A1943 /* HistoryViewController.swift in Sources */,
@@ -441,16 +431,18 @@
 			baseConfigurationReference = 6F5D216C8F77095E309C7066 /* Pods-Expensecure.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TMJH4SHWP7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = H459CHC794;
 				INFOPLIST_FILE = Expensecure/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.expensecure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farmhand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = farmhand_dev_provision_profile;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,16 +453,18 @@
 			baseConfigurationReference = 5A2F0EA679BD05D580E138E3 /* Pods-Expensecure.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TMJH4SHWP7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = H459CHC794;
 				INFOPLIST_FILE = Expensecure/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.expensecure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farmhand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = farmhand_dev_provision_profile;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

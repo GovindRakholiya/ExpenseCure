@@ -6,5 +6,5 @@ target 'Expensecure' do
   use_frameworks!
 
   # Pods for Expensecure
-    pod 'RAMAnimatedTabBarController'
+#    pod 'RAMAnimatedTabBarController'
 end
